@@ -74,7 +74,7 @@ const Register = () => {
           
           <div className="mt-12 text-center">
             <p className="text-slate-400 text-sm">
-              For any registration issues or queries, please contact us at <a href="mailto:support@nextquantum.com" className="text-blue-400 hover:underline">support@nextquantum.com</a>
+              For any registration issues or queries, please contact us at <a href="mailto:jai.parkash@ggi.ac.in" className="text-blue-400 hover:underline">jai.parkash@ggi.ac.in</a>
             </p>
           </div>
         </div>
