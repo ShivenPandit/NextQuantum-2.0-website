@@ -11,33 +11,70 @@ const Register = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Register for <span className="text-blue-400">NextQuantum 2.0</span></h2>
           <p className="text-slate-300 max-w-3xl mx-auto">
-            Secure your spot in the most exciting hackathon of the year
+            Complete these two steps to secure your spot in the most exciting hackathon of the year
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-slate-900 p-8 rounded-xl border border-slate-700">
-          <div className="text-center mb-8">
-            <div className="w-20 h-20 bg-slate-800 rounded-full mx-auto mb-4 flex items-center justify-center">
-              <svg className="w-10 h-10 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+        <div className="max-w-4xl mx-auto">
+          <div className="relative mb-12">
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-500"></div>
+            <div className="flex flex-col gap-12">
+              {/* Step 1 */}
+              <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 relative">
+                <div className="absolute -left-4 top-8 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold z-10">1</div>
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-slate-800 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <svg className="w-10 h-10 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-white">Step 1: Register on Devfolio</h3>
+                  <p className="text-slate-300 max-w-2xl mx-auto mb-8">
+                    We've partnered with Devfolio to start the registration process. Click the button below to register your team for NextQuantum 2.0.
+                  </p>
+                  
+                  <a 
+                    href="https://nextquantum2.devfolio.co/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition-colors text-lg"
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                    Register on Devfolio
+                  </a>
+                </div>
+              </div>
+              
+              {/* Step 2 */}
+              <div className="bg-slate-900 p-8 rounded-xl border border-slate-700 relative">
+                <div className="absolute -left-4 top-8 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold z-10">2</div>
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-slate-800 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <svg className="w-10 h-10 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-white">Step 2: Complete Google Form</h3>
+                  <p className="text-slate-300 max-w-2xl mx-auto mb-8">
+                    After registering on Devfolio, please fill out our Google Form to complete your registration process and provide additional information.
+                  </p>
+                  
+                  <a 
+                    href="https://forms.gle/Evt6RVpEazmyrJBN9" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-medium transition-colors text-lg"
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                    Fill Google Form
+                  </a>
+                </div>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-white">Registration is on Devfolio</h3>
-            <p className="text-slate-300 max-w-2xl mx-auto mb-8">
-              We've partnered with Devfolio to make the registration process smooth and easy. Click the button below to register your team for NextQuantum 2.0.
-            </p>
-            
-            <a 
-              href="https://nextquantum2.devfolio.co/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition-colors text-lg"
-            >
-              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-              Register on Devfolio
-            </a>
           </div>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -74,6 +111,9 @@ const Register = () => {
           
           <div className="mt-12 text-center">
             <p className="text-slate-400 text-sm">
+              <span className="font-semibold text-white">Important:</span> Both steps must be completed to confirm your registration.
+            </p>
+            <p className="text-slate-400 text-sm mt-2">
               For any registration issues or queries, please contact us at <a href="mailto:jai.parkash@ggi.ac.in" className="text-blue-400 hover:underline">jai.parkash@ggi.ac.in</a>
             </p>
           </div>
