@@ -47,7 +47,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-slate-800 text-center text-slate-500">
           <p>&copy; {new Date().getFullYear()} NextQuantum 2.0 | Organized by Gulzar Group of Institutions</p>
-          <p className="mt-1 text-xs text-slate-600">Developed by Shiven Pandit and Rishabh Shrivastav</p>
+          <p className="mt-1 text-xs text-slate-600">Developed by Shiven Pandit</p>
         </div>
       </div>
     </footer>
